@@ -1,1 +1,11 @@
+public class ClassCastExceptionExample {
+    public static void main(String[] args) {
+        try {
+            Object obj = "Hello";
+            Integer num = (Integer) obj;  // Potensi terjadi ClassCastException
+        } catch (ClassCastException e) {
+            System.out.println("Tidak dapat melakukan casting objek ke tipe data yang sesuai.");
+        }
+    }
+}
 
