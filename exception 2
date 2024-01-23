@@ -1,1 +1,11 @@
+public class NumberFormatExceptionExample {
+    public static void main(String[] args) {
+        try {
+            String str = "abc";
+            int num = Integer.parseInt(str);  // Potensi terjadi NumberFormatException
+        } catch (NumberFormatException e) {
+            System.out.println("String tidak dapat diubah menjadi nilai numerik.");
+        }
+    }
+}
 
